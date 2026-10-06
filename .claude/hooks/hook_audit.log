@@ -1,0 +1,9 @@
+[2026-09-06T00:02:25.017189] [POST-EDIT-HOOK TRIGGERED] File modified: phase2/sample_spark.py
+[2026-09-06T00:02:25.018189] [HOOK-CHECK] Running mandatory grain duplicate check...
+[2026-09-06T00:02:46.687113] [HOOK-WARN] DB connection skipped in check: 2003: Can't connect to MySQL server on '172.22.240.1:3306' (Errno 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond)
+[2026-09-06T00:02:46.689113] [HOOK-SUCCESS] All post-edit sanity checks passed.
+[2026-09-06T20:22:06.351877] [POST-EDIT-HOOK TRIGGERED] File modified: phase2/broken_spark.py
+[2026-09-06T20:22:06.403376] [HOOK-CHECK] Running mandatory grain duplicate check...
+[2026-09-06T20:22:06.406375] [HOOK-FAIL] Grain duplicate detected: [(time_key=1204, grid_id=4821, count=2)]
+[2026-09-06T20:22:06.410376] [HOOK-FAIL] Validation failed: Violation of canonical grain (1 grid per hourly timestamp).
+[2026-09-06T20:22:06.412375] [HOOK-ABORT] Action blocked due to failed grain check.

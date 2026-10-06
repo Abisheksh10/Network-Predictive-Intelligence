@@ -1,0 +1,25 @@
+{
+  "name": "telecom-noc-standard",
+  "version": "1.0.0",
+  "description": "Team standardization bundle for Telecom NOC & Predictive Intelligence engineering.",
+  "author": "NOC Platform Architecture & Governance",
+  "minClaudeCodeVersion": "2.0.0",
+  "assets": {
+    "rules": "CLAUDE.md",
+    "commands": [
+      "commands/check-pipeline.md",
+      "commands/explain-grid.md",
+      "commands/review-anomaly.md",
+      "commands/test-api.md",
+      "commands/network-health.md"
+    ],
+    "skills": [
+      "skills/network-anomaly-analysis.md",
+      "skills/pipeline-troubleshooting.md"
+    ],
+    "hooks": [
+      "hooks/post_edit_test.py"
+    ],
+    "settings": "settings.json"
+  }
+}

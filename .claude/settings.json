@@ -1,0 +1,49 @@
+{
+  "permissions": {
+    "defaultMode": "default",
+    "allow": [
+      "Bash(pytest *)",
+      "Bash(pytest)",
+      "Bash(python -m pytest *)",
+      "Bash(ruff check *)",
+      "Bash(black --check *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Read(./phase*/**)",
+      "Read(./Airflow/dags/**)",
+      "Read(./docs/**)",
+      "Read(./status/**)"
+    ],
+    "ask": [
+      "Edit(./Airflow/dags/**)",
+      "Write(./Airflow/dags/**)",
+      "Edit(./**/config.yaml)",
+      "Write(./**/config.yaml)",
+      "Bash(pip install *)",
+      "Bash(npm install *)",
+      "Bash(python -m pip install *)",
+      "Bash(mysql *)"
+    ],
+    "deny": [
+      "Bash(rm -rf data*)",
+      "Bash(rm data*)",
+      "Bash(rmdir data*)",
+      "Bash(del /s /q data*)",
+      "Bash(Remove-Item -Recurse data*)",
+      "Bash(Remove-Item data*)",
+      "Edit(./data/**)",
+      "Write(./data/**)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/.env)"
+    ]
+  },
+  "hooks": {
+    "postToolExecution": [
+      {
+        "matcher": "Edit|Write",
+        "command": "python .claude/hooks/post_edit_test.py \"$FILE_PATH\""
+      }
+    ]
+  }
+}

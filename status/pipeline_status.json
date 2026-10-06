@@ -1,0 +1,21 @@
+{
+  "run_id": "manual__2026-09-05T12:00:00",
+  "run_timestamp": "2026-09-05T12:05:00",
+  "pipeline_status": "SUCCESS",
+  "healthy": true,
+  "tasks": {
+    "ingest_raw": "PASS",
+    "validate_raw": "PASS",
+    "spark_processing": "PASS",
+    "load_warehouse": "PASS",
+    "quality_check": "PASS"
+  },
+  "metrics": {
+    "rows_in": 124500,
+    "rows_rejected": 0,
+    "nulls_handled": 0,
+    "rows_published": 124500,
+    "as_of": "2013-11-07T23:00:00"
+  },
+  "reasons": []
+}

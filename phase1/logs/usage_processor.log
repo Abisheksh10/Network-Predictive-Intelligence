@@ -1,0 +1,71 @@
+2026-08-26 12:15:09,101 | INFO | Loaded file: ../data/landing/sms-call-internet-mi-2013-11-01.csv | rows=1891928
+2026-08-26 12:15:09,549 | INFO | Handling 6040867 activity nulls using curated-layer null-to-zero rule
+2026-08-26 12:15:09,595 | INFO | Cleaned data: input=1891928 rejected=0 remaining=1891928
+2026-08-26 12:15:10,262 | INFO | Derived date, hour and day_of_week.
+2026-08-26 12:15:10,555 | INFO | Aggregated grid/hour data: input=1891928 output=240000
+2026-08-26 12:15:10,606 | INFO | Derived total_sms, total_calls and total_activity.
+2026-08-26 12:15:10,683 | INFO | Computed daily summary: 1 rows
+2026-08-26 12:15:10,684 | INFO | Computed grid summary: 10000 rows
+2026-08-26 12:15:10,710 | INFO | Daily summary exported: ..\data\outputs\daily_summary.csv
+2026-08-26 12:15:10,757 | INFO | Grid summary exported: ..\data\outputs\grid_summary.csv
+2026-08-26 16:35:32,314 | INFO | Loaded file: ../data/landing/sms-call-internet-mi-2013-11-01.csv | rows=1891928
+2026-08-26 16:35:32,809 | INFO | Handling 6040867 activity nulls using curated-layer null-to-zero rule
+2026-08-26 16:35:32,859 | INFO | Cleaned data: input=1891928 rejected=0 remaining=1891928
+2026-08-26 16:35:33,507 | INFO | Derived date, hour and day_of_week.
+2026-08-26 16:35:33,799 | INFO | Aggregated grid/hour data: input=1891928 output=240000
+2026-08-26 16:35:33,850 | INFO | Derived total_sms, total_calls and total_activity.
+2026-08-27 09:52:53,579 | INFO | Loaded file: ../data/landing/sms-call-internet-mi-2013-11-01.csv | rows=1891928
+2026-08-27 09:52:54,022 | INFO | Handling 6040867 activity nulls using curated-layer null-to-zero rule
+2026-08-27 09:52:54,066 | INFO | Cleaned data: input=1891928 rejected=0 remaining=1891928
+2026-08-27 09:52:54,688 | INFO | Derived date, hour and day_of_week.
+2026-08-27 09:52:54,944 | INFO | Aggregated grid/hour data: input=1891928 output=240000
+2026-08-27 09:52:54,990 | INFO | Derived total_sms, total_calls and total_activity.
+2026-08-27 10:21:10,472 | INFO | Loaded file: ../data/landing/sms-call-internet-mi-2013-11-01.csv | rows=1891928
+2026-08-27 10:21:10,914 | INFO | Handling 6040867 activity nulls using curated-layer null-to-zero rule
+2026-08-27 10:21:10,964 | INFO | Cleaned data: input=1891928 rejected=0 remaining=1891928
+2026-08-27 10:21:11,699 | INFO | Derived date, hour and day_of_week.
+2026-08-27 10:21:12,020 | INFO | Aggregated grid/hour data: input=1891928 output=240000
+2026-08-27 10:21:12,076 | INFO | Derived total_sms, total_calls and total_activity.
+2026-08-27 10:29:46,349 | INFO | Loaded file: ../data/landing/sms-call-internet-mi-2013-11-01.csv | rows=1891928
+2026-08-27 10:29:46,676 | INFO | Handling 6040867 activity nulls using curated-layer null-to-zero rule
+2026-08-27 10:29:46,716 | INFO | Cleaned data: input=1891928 rejected=0 remaining=1891928
+2026-08-27 10:29:47,249 | INFO | Derived date, hour and day_of_week.
+2026-08-27 10:29:47,495 | INFO | Aggregated grid/hour data: input=1891928 output=240000
+2026-08-27 10:29:47,538 | INFO | Derived total_sms, total_calls and total_activity.
+2026-08-27 10:47:46,446 | INFO | Loaded file: ../data/landing/sms-call-internet-mi-2013-11-01.csv | rows=1891928
+2026-08-27 10:47:46,787 | INFO | Handling 6040867 activity nulls using curated-layer null-to-zero rule
+2026-08-27 10:47:46,828 | INFO | Cleaned data: input=1891928 rejected=0 remaining=1891928
+2026-08-27 10:47:47,440 | INFO | Derived date, hour and day_of_week.
+2026-08-27 10:47:47,695 | INFO | Aggregated grid/hour data: input=1891928 output=240000
+2026-08-27 10:47:47,737 | INFO | Derived total_sms, total_calls and total_activity.
+2026-08-27 10:47:47,793 | INFO | Computed daily summary: 1 rows
+2026-08-27 10:47:47,794 | INFO | Computed grid summary: 10000 rows
+2026-08-27 10:47:47,821 | INFO | Daily summary exported: ..\data\outputs\daily_summary.csv
+2026-08-27 10:47:47,822 | INFO | Grid summary exported: ..\data\outputs\grid_summary.csv
+2026-08-27 10:49:56,382 | INFO | Loaded file: ../data/landing/sms-call-internet-mi-2013-11-01.csv | rows=1891928
+2026-08-27 10:49:56,802 | INFO | Handling 6040867 activity nulls using curated-layer null-to-zero rule
+2026-08-27 10:49:56,847 | INFO | Cleaned data: input=1891928 rejected=0 remaining=1891928
+2026-08-27 10:49:57,460 | INFO | Derived date, hour and day_of_week.
+2026-08-27 10:49:57,745 | INFO | Aggregated grid/hour data: input=1891928 output=240000
+2026-08-27 10:49:57,797 | INFO | Derived total_sms, total_calls and total_activity.
+2026-08-27 10:49:57,855 | INFO | Computed daily summary: 1 rows
+2026-08-27 10:49:57,856 | INFO | Computed grid summary: 10000 rows
+2026-08-27 10:49:57,880 | INFO | Daily summary exported: ..\data\outputs\daily_summary.csv
+2026-08-27 10:49:57,880 | INFO | Grid summary exported: ..\data\outputs\grid_summary.csv
+2026-08-27 10:52:26,633 | INFO | ========== NP3 STARTED ==========
+2026-08-27 10:54:05,883 | INFO | ========== NP3 STARTED ==========
+2026-08-27 10:56:21,564 | INFO | ========== NP3 STARTED ==========
+2026-08-27 10:56:22,359 | INFO | Loaded file: D:\project1\data\landing\sms-call-internet-mi-2013-11-01.csv | rows=1891928
+2026-08-27 10:56:22,705 | INFO | Handling 6040867 activity nulls using curated-layer null-to-zero rule
+2026-08-27 10:56:22,741 | INFO | Cleaned data: input=1891928 rejected=0 remaining=1891928
+2026-08-27 10:56:23,276 | INFO | Derived date, hour and day_of_week.
+2026-08-27 10:56:23,518 | INFO | Aggregated grid/hour data: input=1891928 output=240000
+2026-08-27 10:56:23,560 | INFO | Derived total_sms, total_calls and total_activity.
+2026-08-27 10:58:41,620 | INFO | ========== NP3 STARTED ==========
+2026-08-27 10:58:42,344 | INFO | Loaded file: D:\project1\data\landing\sms-call-internet-mi-2013-11-01.csv | rows=1891928
+2026-08-27 10:58:42,684 | INFO | Handling 6040867 activity nulls using curated-layer null-to-zero rule
+2026-08-27 10:58:42,721 | INFO | Cleaned data: input=1891928 rejected=0 remaining=1891928
+2026-08-27 10:58:43,253 | INFO | Derived date, hour and day_of_week.
+2026-08-27 10:58:43,501 | INFO | Aggregated grid/hour data: input=1891928 output=240000
+2026-08-27 10:58:43,547 | INFO | Derived total_sms, total_calls and total_activity.
+

@@ -1,0 +1,34 @@
+2026-08-27 11:03:05,309 | INFO | ========== NP3 STARTED ==========
+2026-08-27 11:03:07,312 | INFO | NP2 grid/hour output received: 240000 records
+2026-08-27 11:03:07,360 | INFO | Input validation: PASS | 240000 grid/hour records
+2026-08-27 11:03:07,368 | INFO | Activity floor: 25th percentile = 1953.6007
+2026-08-27 11:03:17,533 | INFO | Within-day leave-one-out baseline created using the other 23 hours.
+2026-08-27 11:03:17,540 | INFO | Baseline validation: PASS | Grid=1 | Timestamp=2013-11-01 00:00:00 | Current=62.0092 | Baseline=83.7437
+2026-08-27 11:03:22,630 | INFO | Alerts generated: 33326
+2026-08-27 11:03:23,096 | INFO | Alert reason validation: PASS
+2026-08-27 11:03:23,099 | INFO | Alert volume: 31925 / 240000 grid-hours (13.3021%)
+2026-08-27 11:03:23,108 | INFO | Alert volume validation: PASS
+2026-08-27 11:03:23,162 | INFO | Milan grid validation: PASS | 6119 alert grid IDs verified
+2026-08-27 11:03:23,306 | INFO | Alert file validation: PASS | D:\project1\outputs\np3\network_alerts.csv
+2026-08-27 11:03:23,307 | INFO | ========== OPERATIONAL SUMMARY ==========
+2026-08-27 11:03:23,309 | INFO | Alerts by type:
+alert_type
+ACTIVITY_DROP     18483
+HIGH_ACTIVITY     10731
+ACTIVITY_SPIKE     4112
+2026-08-27 11:03:23,310 | INFO | Top 10 grids by alert count:
+grid_id
+7823    29
+7822    29
+7647    28
+1583    27
+7724    27
+1683    27
+1684    26
+1584    26
+3222    26
+8169    26
+2026-08-27 11:03:23,312 | INFO | Alerted grid-hours: 31925 / 240000 (13.3021%)
+2026-08-27 11:03:23,313 | INFO | Alerts represent anomalies for investigation, not confirmed network congestion.
+2026-08-27 11:03:23,314 | INFO | Limitation statement written: D:\project1\outputs\np3\np3_limitations.txt
+2026-08-27 11:03:23,314 | INFO | ========== NP3 COMPLETED ==========

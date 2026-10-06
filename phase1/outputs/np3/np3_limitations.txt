@@ -1,0 +1,42 @@
+NP3 RULE-BASED ALERT LIMITATIONS
+
+The NP3 alert layer identifies unusual activity relative to
+each grid's own within-day activity pattern. An alert is a
+request for investigation and is not a diagnosis of network
+congestion.
+
+The baseline uses only one day of data. Therefore, it cannot
+distinguish a genuine network problem from a normal recurring
+pattern that happens to occur at a particular hour.
+
+HOUR-OF-DAY BLIND SPOT
+
+Because only one day of data is available, the system cannot
+learn the normal activity level for a particular hour of day
+across multiple days.
+
+For example, it cannot determine whether 18:00 is normally a
+high-activity period for a particular grid because there are
+no historical 18:00 observations from other days.
+
+The within-day baseline also cannot distinguish whether an
+unusual activity level is caused by network congestion,
+legitimate user behaviour, a public event, maintenance,
+measurement behaviour, or another operational cause.
+
+The activity floor removes very-low-activity grids from alert
+evaluation. This reduces noisy ratio-based alerts but may also
+hide genuine anomalies in those low-activity grids.
+
+The HIGH_ACTIVITY, ACTIVITY_DROP and ACTIVITY_SPIKE rules are
+transparent business rules rather than learned statistical or
+machine-learning models.
+
+Before an alert could be described as network congestion,
+additional evidence would be required, including multiple
+days or weeks of historical grid/hour activity, network
+performance indicators such as latency, packet loss,
+throughput and utilisation, service-impact indicators,
+outage and maintenance information, and preferably independent
+operational evidence showing that users or network services
+were affected.

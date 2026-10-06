@@ -1,0 +1,7 @@
+.env
+data/
+word/
+Airflow/data
+./__pycache__
+
+./node_modules

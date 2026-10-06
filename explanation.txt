@@ -1,0 +1,37 @@
+The Network Overview page acts as our primary operational radar. It allows NOC engineers to monitor macro-level network health and traffic distributions across all 10,000 Milan grid cells in real time.
+
+Behind the scenes, when an operator selects a snapshot or cutoff window, our React dashboard queries FastAPI endpoints that join fact_network_activity with dim_time and dim_grid. Because our warehouse uses a clean star schema with composite indexing on (time_key, grid_id), these multi-million-row aggregations return in milliseconds.
+
+The page renders global interaction volumes, shows the mobile data versus voice/SMS mix, charts the 24-hour diurnal trend, and plots top-load hotspot cells with their exact geographic coordinates.
+
+Most importantly, it functions as our triage entry point: an engineer identifies which cells are under unusual load here, and with a single click, transfers that grid directly into our Predictive Risk engine for machine learning scoring and Claude root-cause analysis.
+
+
+
+
+
+
+The Hotspots & Alerts page acts as our tactical command center, separating expected high demand from anomalous operational risk.For Hotspots, the dashboard queries fact_network_activity joined with dim_grid to identify and spatially map the top 20 highest-traffic cells in Milan, breaking down their communication mix across mobile internet, calls, and SMS.For Alerts, the system queries network_risk_scores and network_anomaly_scores. It filters for cells exceeding our calibrated risk threshold ($P \ge 0.60$) or flagged by our Isolation Forest model. This distinguishes between normal high-density traffic and volatile cells at risk of exceeding capacity.Every alert displays its classification tier and primary statistical driver, allowing dispatchers to click any flagged grid and seamlessly transition into the AI diagnostic pipeline for root-cause analysis.
+
+
+
+
+
+
+prediction:
+avg_activity: What is this cell's normal volume? (Is it a busy downtown cell or a quiet residential cell?)
+
+peak_ratio: Did it experience a sudden violent spike compared to its normal day? (e.g., peak was 3 times higher than average).
+
+activity_growth: Is traffic accelerating rapidly compared to yesterday?
+
+variability: Has traffic been fluctuating wildly or steady?
+
+active_hours: Was it active all 24 hours, or dead for half the day?
+
+internet_share: Is the traffic mostly mobile data (browsing/video) or calls/SMS?
+
+
+
+
+We do not allow the LLM to hallucinate or guess reasons for network alerts. Instead, we treat Claude as an investigator equipped with verified API tools. Claude actively calls get_anomaly_score to test whether a cell's behavior is structurally anomalous or just high-volume, grounding its diagnostic narrative in real statistical evidence.

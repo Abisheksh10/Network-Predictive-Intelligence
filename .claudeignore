@@ -1,0 +1,39 @@
+# 1. Heavy Data Zones & Spark Storage (MASSIVE TOKEN DRAIN)
+data/
+data/**
+**/data/
+**/*.csv
+**/*.parquet
+**/*.geojson
+**/*.json.gz
+
+# 2. Airflow Runtime & Logs (HUGE TOKEN DRAIN)
+Airflow/logs/
+Airflow/logs/**
+**/logs/
+**/*.log
+
+# 3. Frontend & Build Dependencies (DOZENS OF MEGABYTES OF JS/JSON)
+phase5/node_modules/
+**/node_modules/
+phase5/build/
+phase5/dist/
+package-lock.json
+
+# 4. Binaries, Virtual Environments & Executables
+bin/
+bin/**
+*.exe
+.venv/
+venv/
+**/__pycache__/
+**/*.pyc
+
+# 5. ML Model Weights & Serialized Artifacts
+*.joblib
+*.pkl
+*.onnx
+
+# 6. Git internal history
+.git/
+.git/**
